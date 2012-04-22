@@ -91,6 +91,7 @@ map <S-L> gt
 inoremap <C-J> <C-X><C-I>
 inoremap <C-F> <C-X><C-F>
 inoremap <C-N> <C-X><C-N>
+noremap p "0p
 
 "===============================================================================================
 "Plugin
