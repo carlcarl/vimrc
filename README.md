@@ -6,6 +6,8 @@ In your home folder:
 	git clone https://carlcarl@github.com/carlcarl/vimrc.git ~/.vim
 	ln -s ~/.vim/vimrc ~/.vimrc
 	ln -s ~/.vim/gvimrc ~/.gvimrc
+	cd ~/.vim
+	git submodule update --init
 
 ## Shortcut ##
 
