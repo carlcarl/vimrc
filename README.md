@@ -20,12 +20,12 @@ In your home folder:
 
 	T: tasklist
 	L & H: change tab(gt & gT)
-	gc(in selection mode): comment selection
+	gc(selection mode): comment selection
 	gcc: comment current line
 	<leader><leader>w: easy motion
 	<leader><leader>t: easy motion + search
 	ctrl + F12: ctags
-	S<tag>(選取): surround
+	S<tag>(selection mode): surround
 	cs<tag><tag2>: replace tag to tag2
 	ds<tag>: delete tag
 	F2 or <leader>p: paste mode
