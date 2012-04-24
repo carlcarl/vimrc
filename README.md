@@ -20,17 +20,16 @@ In your home folder:
 
 	T: tasklist
 	L & H: change tab(gt & gT)
-	gc(選取範圍): comment selection
+	gc(in selection mode): comment selection
 	gcc: comment current line
 	<leader><leader>w: easy motion
 	<leader><leader>t: easy motion + search
-	F2 or <leader>p: paste mode
-	F5: nerd_tree
-	<leader>n: nerd_tree_tab
 	ctrl + F12: ctags
 	S<tag>(選取): surround
 	cs<tag><tag2>: replace tag to tag2
 	ds<tag>: delete tag
+	F2 or <leader>p: paste mode
+	F5 <leader>n: nerd_tree
 
 	#Python
 	:Pylint: python syntax check
