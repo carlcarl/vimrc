@@ -94,9 +94,9 @@ inoremap <C-F> <C-X><C-F>
 inoremap <C-N> <C-X><C-N>
 
 " Use register 0 to store clipboard buffers
-noremap p "0p
-noremap x "0x
-noremap d "0d
+" noremap p "0p
+" noremap x "0x
+" noremap d "0d
 
 "===============================================================================================
 "Plugin
