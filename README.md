@@ -28,6 +28,7 @@ In your home folder:
 	S<tag>(selection mode): surround
 	cs<tag><tag2>: replace tag to tag2
 	ds<tag>: delete tag
+	F1: show or hide line number
 	F2 or <leader>p: paste mode
 	F5 <leader>n: nerd_tree
 

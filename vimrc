@@ -27,19 +27,20 @@ if has("syntax")
 endif
 
 set t_Co=256
-colorscheme darkburn
+" colorscheme darkburn
+colorscheme molokai 
+" let g:molokai_original=1
+
+set cursorline
+""colors vgod
+set background=light 
+    
+let python_highlight_all = 1
 
 "let hostname = substitute(system('hostname'), '\n', '', '')
 "if hostname == xxx
 "	do something
 "endif
-
-set cursorline
-""colors vgod
-""set background=light 
-""colors moria
-    
-let python_highlight_all = 1
 
 "===============================================================================================
 "Feature
@@ -47,7 +48,8 @@ let python_highlight_all = 1
 
 
 " Uncomment the following to have Vim jump to the last position when
-" reopening a file
+" reopening a file 
+" Remember to chown .viminfo 
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
@@ -75,6 +77,9 @@ autocmd FileType python setlocal expandtab
 "===============================================================================================
 "Shortcut
 "===============================================================================================
+
+" F1 toggles show line number
+nnoremap <F1> :set nu!<CR>
 
 " ,p toggles paste mode
 nmap <leader>p :set paste!<BAR>set paste?<CR>
