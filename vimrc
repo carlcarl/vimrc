@@ -126,7 +126,7 @@ let g:SuperTabMappingForward = '<Plug>supertabKey'
 let g:xptemplate_fallback = '<Plug>supertabKey'
 
 " xpt uses <Tab> as trigger key
-let g:xptemplate_key = '<tab>'
+" let g:xptemplate_key = '<tab>'
 
 
 
