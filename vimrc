@@ -136,7 +136,7 @@ autocmd FileType c set ofu=ccomplete#Complete
 autocmd FileType php set ofu=phpcomplete#CompletePHP
 autocmd FileType python set ofu=pythoncomplete#Complete
 autocmd FileType javascript set ofu=javascriptcomplete#CompleteJS
-autocmd FileType html set ofu=htmlcomplete#CompleteTags
+" autocmd FileType html set ofu=htmlcomplete#CompleteTags
 autocmd FileType css set ofu=csscomplete#CompleteCSS
 autocmd FileType xml set ofu=xmlcomplete#CompleteTags
 "omni加上supertab支持
