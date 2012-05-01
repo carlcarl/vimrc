@@ -9,7 +9,7 @@ In your home folder:
 	cd ~/.vim
 	git submodule update --init
 
-## Shortcut ##
+## Addictional Shortcuts ##
 
 	tab: autocomplete->supertab
 	<C-X><C-O>: autocomplete
@@ -39,3 +39,23 @@ In your home folder:
 	F: code folding(all)
 	f: code folding
 
+## Normal Shortcuts ##
+
+   	gg: Begin of file
+	G: End of file
+	^: Begin of current line
+	$: End of current line
+
+	A: Insert at line end
+	o: Insert a new line after current line
+	O: Insert a new line before current line
+
+	fx: Find 'x' after current position in current line
+	Fx: Find 'x' before current position in current line
+	*: Find current word in file
+
+	viw: Select word
+	vit: Select content in tag 
+	vat: Select content include tag
+
+	ctrl+]: Back to normal mode(Esc)
