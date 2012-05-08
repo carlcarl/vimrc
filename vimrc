@@ -72,6 +72,7 @@ set ai
 ""set copyindent
 set hlsearch
 ""set smarttab
+set noexpandtab
 autocmd FileType python setlocal expandtab
 
 "===============================================================================================
