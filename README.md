@@ -3,7 +3,7 @@
 ## Installation ##
 In your home folder:
 
-	git clone https://carlcarl@github.com/carlcarl/vimrc.git ~/.vim
+	git clone git://github.com/carlcarl/vimrc.git
 	ln -s ~/.vim/vimrc ~/.vimrc
 	ln -s ~/.vim/gvimrc ~/.gvimrc
 	cd ~/.vim
