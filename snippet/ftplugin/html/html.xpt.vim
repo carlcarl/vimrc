@@ -248,7 +248,7 @@ XPT script " <script language="javascript"...
 
 
 XPT scriptsrc " <script .. src=...
-<script language="javascript" type="text/javascript" src="`js^"></script>
+<script type="text/javascript" src="`js^"></script>
 
 
 XPT body " <body>..</body>
