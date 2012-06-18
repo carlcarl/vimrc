@@ -74,6 +74,7 @@ set hlsearch
 ""set smarttab
 set noexpandtab
 autocmd FileType python setlocal expandtab
+autocmd FileType python setlocal foldmethod=indent
 
 "===============================================================================================
 "Shortcut
