@@ -182,8 +182,10 @@ map <leader>n <plug>NERDTreeTabsToggle<CR>
 map T :TaskList<CR>
 
 "plugin pylint
-autocmd FileType python compiler pylint
-let g:pylint_onwrite = 0
-let g:pylint_cwindow = 0
+" autocmd FileType python compiler pylint
+" let g:pylint_onwrite = 0
+" let g:pylint_cwindow = 0
+
+let g:pep8_map = '<F6>'
 
 
