@@ -40,9 +40,6 @@
 [submodule "bundle/phpcomplete.vim"]
 	path = bundle/phpcomplete.vim
 	url = https://github.com/shawncplus/phpcomplete.vim.git
-[submodule "bundle/pylint.vim"]
-	path = bundle/pylint.vim
-	url = https://github.com/vim-scripts/pylint.vim.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
