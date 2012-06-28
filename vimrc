@@ -189,4 +189,5 @@ map T :TaskList<CR>
 
 let g:pep8_map = '<F6>'
 
+let g:pymode_rope_goto_def_newwin = "vnew"
 
