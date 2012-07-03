@@ -104,7 +104,7 @@ inoremap <C-N> <C-X><C-N>
 noremap p "0p
 noremap P "0P
 noremap y "0y
-" noremap x "0x
+noremap x "0x
 " noremap d "0d
 
 "===============================================================================================
