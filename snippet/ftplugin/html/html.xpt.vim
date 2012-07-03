@@ -210,6 +210,18 @@ XPT html " <html><head>..<head><body>...
 </html>
 
 
+XPT html5 " <html><head>..<head><body>...
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=`encoding^html_enc()^"/>
+        `:title:^
+    </head>
+    <body>
+        `cursor^
+    </body>
+</html>
+
 XPT head " <head>..</head>
 <head>
     `:contenttype:^
