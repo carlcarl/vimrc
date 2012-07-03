@@ -214,7 +214,7 @@ XPT html5 " <html><head>..<head><body>...
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset=`encoding^html_enc()^"/>
+        <meta charset="`encoding^html_enc()^"/>
         `:title:^
     </head>
     <body>
