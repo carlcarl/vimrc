@@ -131,6 +131,8 @@ let g:xptemplate_fallback = '<Plug>supertabKey'
 " xpt uses <Tab> as trigger key
 " let g:xptemplate_key = '<tab>'
 
+" Fid bug When press enter key, the indent will be broken with neocomplcache
+let g:SuperTabCrMapping = 0
 
 
 "加上omni補完
