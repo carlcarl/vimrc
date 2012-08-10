@@ -11,12 +11,8 @@ In your home folder:
 
 ## Addictional Shortcuts ##
 
-	tab: autocomplete->supertab
-	<C-X><C-O>: autocomplete
+	tab: autocomplete
 	<C-\>: template
-	<C-N> or <C-X><C-N>: autocomplete in document
-	<C-F> or <C-X><C-F>: autocomplete path
-	<C-J> or <C-X><C-I>: autocomplete in header
 
 	T: tasklist
 	L & H: change tab(gt & gT)
@@ -59,3 +55,9 @@ In your home folder:
 	vat: Select content include tag
 
 	ctrl+]: Back to normal mode(Esc)
+
+	<C-N> or <C-X><C-N>: autocomplete in document
+	<C-F> or <C-X><C-F>: autocomplete path
+	<C-J> or <C-X><C-I>: autocomplete in header
+	<C-X><C-O>: autocomplete
+
