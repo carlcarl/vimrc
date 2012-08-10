@@ -49,7 +49,7 @@ let python_highlight_all = 1
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file 
-" Remember to chown .viminfo 
+" Remember to chown .viminfo to the user by carlcarl
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
