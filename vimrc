@@ -112,13 +112,6 @@ noremap x "0x
 "===============================================================================================
 let mapleader = ","
 
-"plugin xptemplate
-set nocompatible
-let g:xptemplate_vars = "BRfun=\n&BRif=\n&BRloop=\n&SPcmd=&$author=carlcarl&$email=carlcarlking@gmail.com&SParg="
-
-let g:xptemplate_brace_complete = '([{'
-let g:xptemplate_snippet_folders = [$HOME . '/.vim/snippet']
-
 "Add omni auto complete
 autocmd FileType c set ofu=ccomplete#Complete
 autocmd FileType php set ofu=phpcomplete#CompletePHP
@@ -133,12 +126,6 @@ autocmd FileType xml set ofu=xmlcomplete#CompleteTags
 " make CSS omnicompletion work for SASS and SCSS
 autocmd BufNewFile,BufRead *.scss             set ft=scss.css
 autocmd BufNewFile,BufRead *.sass             set ft=sass.css
-" " use <tab>/<S-tab> to navigate through pum. Optional
-" let g:xptemplate_pum_tab_nav = 1
-
-" " xpt triggers only when you typed whole name of a snippet. Optional
-let g:xptemplate_minimal_prefix = 'full'
-
 
 "plugin ctags
 set tags+=~/.vim/personal/cpp_tags
