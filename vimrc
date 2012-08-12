@@ -126,7 +126,7 @@ let g:SuperTabMappingForward = '<Plug>supertabKey'
 
 " if nothing matched in xpt, try supertab
 " supertab complete the word by what you already input
-let g:xptemplate_fallback = '<Plug>supertabKey'
+" let g:xptemplate_fallback = '<Plug>supertabKey'
 
 " xpt uses <Tab> as trigger key
 " let g:xptemplate_key = '<tab>'
@@ -135,8 +135,7 @@ let g:xptemplate_fallback = '<Plug>supertabKey'
 let g:SuperTabCrMapping = 0
 
 
-"加上omni補完
-"set ofu=syntaxcomplete#Complete
+"Add omni auto complete
 autocmd FileType c set ofu=ccomplete#Complete
 autocmd FileType php set ofu=phpcomplete#CompletePHP
 autocmd FileType python set ofu=pythoncomplete#Complete
@@ -145,17 +144,6 @@ autocmd FileType javascript set ofu=javascriptcomplete#CompleteJS
 autocmd FileType html,markdown set ofu=htmlcomplete#CompleteTags
 autocmd FileType css set ofu=csscomplete#CompleteCSS
 autocmd FileType xml set ofu=xmlcomplete#CompleteTags
-"omni加上supertab支持
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-"imap <silent> ` <C-X><C-O>
-
-" use syntax complete if nothing else available
-if has("autocmd") && exists("+omnifunc")
-  autocmd Filetype *
-              \	if &omnifunc == "" |
-              \		setlocal omnifunc=syntaxcomplete#Complete |
-              \	endif
-endif
 
 
 " make CSS omnicompletion work for SASS and SCSS
@@ -173,8 +161,8 @@ set tags+=~/.vim/personal/cpp_tags
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 ""set tags+=~/.vim/stltags
 
+"plugin vim-powerline show
 set ls=2
-
 
 "plygin nerdtree
 nnoremap <silent> <F5> :NERDTree<CR>
@@ -182,8 +170,16 @@ nnoremap <silent> <F5> :NERDTree<CR>
 "plugin nerdtreetab
 map <leader>n <plug>NERDTreeTabsToggle<CR>
 
-" tasklist
+"plugin tasklist
 map T :TaskList<CR>
+
+
+"plugin ctrlp
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+  \ 'file': '\.exe$\|\.so$\|\.dll$|\.jpg$|\.jpeg$|\.ico$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
 "plugin pylint
 " autocmd FileType python compiler pylint
