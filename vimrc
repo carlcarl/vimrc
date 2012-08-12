@@ -119,22 +119,6 @@ let g:xptemplate_vars = "BRfun=\n&BRif=\n&BRloop=\n&SPcmd=&$author=carlcarl&$ema
 let g:xptemplate_brace_complete = '([{'
 let g:xptemplate_snippet_folders = [$HOME . '/.vim/snippet']
 
-"plugin supertab
-
-" avoid key conflict
-let g:SuperTabMappingForward = '<Plug>supertabKey'
-
-" if nothing matched in xpt, try supertab
-" supertab complete the word by what you already input
-" let g:xptemplate_fallback = '<Plug>supertabKey'
-
-" xpt uses <Tab> as trigger key
-" let g:xptemplate_key = '<tab>'
-
-" Fid bug When press enter key, the indent will be broken with neocomplcache
-let g:SuperTabCrMapping = 0
-
-
 "Add omni auto complete
 autocmd FileType c set ofu=ccomplete#Complete
 autocmd FileType php set ofu=phpcomplete#CompletePHP
