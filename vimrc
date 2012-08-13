@@ -160,8 +160,6 @@ let g:ctrlp_custom_ignore = {
 " let g:pylint_onwrite = 0
 " let g:pylint_cwindow = 0
 
-let g:pep8_map = '<F6>'
-
 let g:pymode_rope_goto_def_newwin = "vnew"
 
 " Disable AutoComplPop.
