@@ -22,9 +22,6 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
-[submodule "bundle/OmniCppComplete"]
-	path = bundle/OmniCppComplete
-	url = https://github.com/vim-scripts/OmniCppComplete.git
 [submodule "bundle/matchit.zip"]
 	path = bundle/matchit.zip
 	url = https://github.com/vim-scripts/matchit.zip.git
