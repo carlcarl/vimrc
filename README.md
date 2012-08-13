@@ -61,3 +61,10 @@ In your home folder:
 	<C-J> or <C-X><C-I>: autocomplete in header
 	<C-X><C-O>: autocomplete
 
+## Package dependency ##
+
+	clang: c autocomplete
+	pysmell: python autocomplete
+	pylint: python syntax check
+
+
