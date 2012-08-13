@@ -76,6 +76,9 @@ set noexpandtab
 autocmd FileType python setlocal expandtab
 autocmd FileType python setlocal foldmethod=indent
 
+" Auto close Scratch window(auto complete doc) when leave insert mode
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 "===============================================================================================
 "Shortcut
 "===============================================================================================
