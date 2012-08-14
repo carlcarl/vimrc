@@ -66,5 +66,5 @@ In your home folder:
 	clang: c autocomplete
 	pysmell: python autocomplete
 	pylint: python syntax check
-
+	php: php syntax check 
 

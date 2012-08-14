@@ -219,6 +219,12 @@ let g:neocomplcache_enable_auto_select = 1
 "inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<TAB>"
 "inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
 
+" Use enter to select auto complete menu
+inoremap <expr><silent> <CR> <SID>my_cr_function()
+function! s:my_cr_function()
+	return pumvisible() ? neocomplcache#close_popup() : "\<CR>"
+endfunction
+
 " Enable heavy omni completion.
 if !exists('g:neocomplcache_omni_patterns')
   let g:neocomplcache_omni_patterns = {}
