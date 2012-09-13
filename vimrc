@@ -137,6 +137,7 @@ map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 "plugin vim-powerline show
 set ls=2
+let g:Powerline_symbols = 'fancy'
 
 "plygin nerdtree
 nnoremap <silent> <F5> :NERDTree<CR>
