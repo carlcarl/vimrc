@@ -79,6 +79,12 @@ autocmd FileType python setlocal foldmethod=indent
 " Auto close Scratch window(auto complete doc) when leave insert mode
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
+" AUto close {}
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+
 "===============================================================================================
 "Shortcut
 "===============================================================================================
