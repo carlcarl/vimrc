@@ -1,4 +1,4 @@
 
-set guifont=Monaco\ 16
+set guifont=DejaVu\ Sans\ Mono\ 14
 
 
