@@ -34,6 +34,11 @@ In your home folder:
 	<leader>pw: python document
 	F: code folding(all)
 	f: code folding
+	<C-c>g goto definition
+	<C-c>d show documentation
+	<C-c>f find occurrences
+	<leader>r run python
+	<leader>b set breakpoint
 
 ## Normal Shortcuts ##
 
