@@ -46,3 +46,6 @@
 [submodule "bundle/clang_complete"]
 	path = bundle/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "bundle/vim-scripts"]
+	path = bundle/vim-scripts
+	url = http://fedorapeople.org/cgit/wwoods/public_git/vim-scripts.git
