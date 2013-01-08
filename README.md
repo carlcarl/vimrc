@@ -21,6 +21,9 @@ In your home folder:
 	<leader><leader>w: easy motion
 	<leader><leader>t: easy motion + search
 	ctrl + F12: ctags
+	ctrl + ]: find definition
+	ctrl + t: back to usage
+	ctrl + o: previous action
 	S<tag>(selection mode): surround
 	cs<tag><tag2>: replace tag to tag2
 	ds<tag>: delete tag
