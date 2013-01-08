@@ -139,6 +139,7 @@ autocmd BufNewFile,BufRead *.sass             set ft=sass.css
 "plugin ctags
 set tags+=~/.vim/personal/cpp_tags
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+nnoremap <F3> :TlistToggle<CR>
 ""set tags+=~/.vim/stltags
 
 "plugin vim-powerline show
