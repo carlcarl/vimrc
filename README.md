@@ -30,6 +30,14 @@ In your home folder:
 	F1: show or hide line number
 	F2 or <leader>p: paste mode
 	F5 <leader>n: nerd_tree
+	
+	#cscope
+	ctrl + \ + g: find definition
+	ctrl + \ + s: find this symbol
+	ctrl + \ + c: find the functions which call the function
+	ctrl + \ + t: find the text string
+	ctrl + \ + i: find files include this file
+	ctrl + \ + f: open the file
 
 	#Python
 	:Pylint: python syntax check
