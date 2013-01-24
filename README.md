@@ -41,8 +41,8 @@ In your home folder:
 
 	#Python
 	:Pylint: python syntax check
-	:Pydoc: python document
-	<leader>pw: python document
+	:Pydoc function: find function definition in python document
+	K: find current function definition in python document
 	F: code folding(all)
 	f: code folding
 	<C-c>g goto definition
