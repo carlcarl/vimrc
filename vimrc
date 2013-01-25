@@ -246,3 +246,6 @@ let g:neocomplcache_snippets_dir = '~/.vim/snippets/'
 " Prevent conflict with cscope
 let g:neocomplcache_force_overwrite_completefunc = 1
 
+" Use clang library instead which perform better performance 
+let g:clang_use_library = 1
+
