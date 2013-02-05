@@ -1,4 +1,4 @@
 
-set guifont=DejaVu\ Sans\ Mono\ 14
-
+set guifont=Source\ Code\ Pro\ 14
+colorscheme molokai
 
