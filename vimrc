@@ -167,6 +167,7 @@ let g:ctrlp_custom_ignore = {
 " let g:pylint_cwindow = 0
 
 let g:pymode_rope_goto_def_newwin = "vnew"
+" let g:pymode_lint_signs_always_visible = 1
 
 " Disable AutoComplPop.
 "let g:acp_enableAtStartup = 0
