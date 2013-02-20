@@ -250,3 +250,7 @@ let g:neocomplcache_force_overwrite_completefunc = 1
 " Use clang library instead which perform better performance 
 let g:clang_use_library = 1
 
+let g:syntastic_mode_map={ 'mode': 'active',
+                     \ 'active_filetypes': [],
+                     \ 'passive_filetypes': ['html'] }
+
