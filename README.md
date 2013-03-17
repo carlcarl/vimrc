@@ -7,7 +7,7 @@ In your home folder:
 	ln -s ~/.vim/vimrc ~/.vimrc
 	ln -s ~/.vim/gvimrc ~/.gvimrc
 	cd ~/.vim
-	git submodule update --init
+	git submodule update --init --recursive
 
 ## Addictional Shortcuts ##
 
@@ -70,7 +70,7 @@ In your home folder:
 	vit: Select content in tag 
 	vat: Select content include tag
 
-	ctrl+]: Back to normal mode(Esc)
+	ctrl+[: Back to normal mode(Esc)
 
 	<C-N> or <C-X><C-N>: autocomplete in document
 	<C-F> or <C-X><C-F>: autocomplete path
