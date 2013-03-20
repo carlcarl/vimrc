@@ -1,4 +1,4 @@
 
-set guifont=Source\ Code\ Pro\ 14
+set guifont=Source\ Code\ Pro:h16
 colorscheme molokai
 
