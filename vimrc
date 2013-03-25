@@ -28,12 +28,12 @@ endif
 
 set t_Co=256
 " colorscheme darkburn
-colorscheme molokai 
-" let g:molokai_original=1
+colorscheme molokai2
+let g:molokai_original=1
 
 set cursorline
 ""colors vgod
-set background=light 
+" set background=light 
     
 let python_highlight_all = 1
 
