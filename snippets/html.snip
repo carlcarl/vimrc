@@ -12,25 +12,38 @@ snippet doctypestrict
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 
-snippet html
+snippet html5
+    <!DOCTYPE html>
     <html lang="en">
-        ${1}
+        <head>
+            <meta charset=${1:utf-8}">
+            <title>${2}</title>${3}
+        </head>
+        <body>
+           ${4} 
+        </body>
     </html>
 
 snippet xhtml
+    <!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml">
-        ${1}
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=${1:utf-8}">
+            <title>${2}</title>${3}
+        </head>
+        <body>
+           ${4} 
+        </body>
     </html>
 
 snippet head
     <head>
         <meta charset=${1:utf-8}">
         <title>${2}</title>
-    <style>
         ${3}
-    </style>
-        ${4}
-    </head>${5}
+    </head>${4}
 
 snippet xhead
     <head>
