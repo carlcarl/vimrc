@@ -55,3 +55,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "bundle/vim-css"]
+	path = bundle/vim-css
+	url = https://github.com/lepture/vim-css.git
