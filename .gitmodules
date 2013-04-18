@@ -58,3 +58,6 @@
 [submodule "bundle/vim-css"]
 	path = bundle/vim-css
 	url = https://github.com/lepture/vim-css.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
