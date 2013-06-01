@@ -179,6 +179,8 @@ let g:syntastic_mode_map={ 'mode': 'active',
 " Vim-jedi settings
 let g:jedi#popup_on_dot = 0
 
+let g:ycm_confirm_extra_conf = 0
+
 source ~/.vim/neocomplcache.vim
 
 " Specific settings with each host
