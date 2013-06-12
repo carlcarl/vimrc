@@ -182,9 +182,7 @@ let g:jedi#popup_on_dot = 0
 
 " Youcompleteme
 let g:ycm_confirm_extra_conf = 0
-
-
-source ~/.vim/neocomplcache.vim
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
 " Specific settings with each host
 silent! source ~/.myvimrc

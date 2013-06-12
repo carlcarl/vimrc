@@ -31,15 +31,9 @@
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "bundle/neocomplcache"]
-	path = bundle/neocomplcache
-	url = https://github.com/Shougo/neocomplcache.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/clang_complete"]
-	path = bundle/clang_complete
-	url = https://github.com/Rip-Rip/clang_complete.git
 [submodule "bundle/vim-scripts"]
 	path = bundle/vim-scripts
 	url = http://fedorapeople.org/cgit/wwoods/public_git/vim-scripts.git
