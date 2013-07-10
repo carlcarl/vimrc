@@ -80,10 +80,10 @@ autocmd FileType python setlocal foldmethod=indent
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 " AUto close {}
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
+" inoremap {      {}<Left>
+" inoremap {<CR>  {<CR>}<Esc>O
+" inoremap {{     {
+" inoremap {}     {}
 
 "===============================================================================================
 "Shortcut
