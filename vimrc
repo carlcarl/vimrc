@@ -32,8 +32,6 @@ colorscheme molokai2
 let g:molokai_original=1
 
 set cursorline
-""colors vgod
-" set background=light 
     
 let python_highlight_all = 1
 
@@ -153,7 +151,6 @@ map <leader>n <plug>NERDTreeTabsToggle<CR>
 "plugin tasklist
 map T :TaskList<CR>
 
-
 "plugin ctrlp
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$',
@@ -169,9 +166,6 @@ let g:ctrlp_custom_ignore = {
 let g:pymode_rope_goto_def_newwin = "vnew"
 " let g:pymode_lint_signs_always_visible = 1
 let g:pymode_indent = 1
-
-" Use clang library instead which perform better performance 
-let g:clang_use_library = 1
 
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
