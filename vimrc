@@ -138,9 +138,16 @@ autocmd BufNewFile,BufRead *.sass             set ft=sass.css
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 nnoremap <F3> :TlistToggle<CR>
 
-"plugin vim-powerline show
+"plugin vim-airline show
 set ls=2
-let g:Powerline_symbols = 'fancy'
+" let g:airline_powerline_fonts = 1
+" set ambiwidth=double
+let g:airline_left_sep = '⮀'
+let g:airline_right_sep = '⮂'
+let g:airline_branch_prefix = '⭠'
+let g:airline_readonly_symbol = '⭤'
+let g:airline_linecolumn_prefix = '⭡'
+let g:airline_theme = 'powerlineish'
 
 "plygin nerdtree
 nnoremap <silent> <F5> :NERDTree<CR>
@@ -181,5 +188,4 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
 " Specific settings with each host
 silent! source ~/.myvimrc
-	
 
