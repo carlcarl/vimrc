@@ -50,7 +50,7 @@ let python_highlight_all = 1
 " Remember to chown .viminfo to the user by carlcarl
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
-
+set clipboard=unnamed
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
 set showcmd		" Show (partial) command in status line.
@@ -73,6 +73,7 @@ set hlsearch
 set noexpandtab
 autocmd FileType python setlocal expandtab
 autocmd FileType python setlocal foldmethod=indent
+autocmd FileType javascript setlocal expandtab
 
 " Auto close Scratch window(auto complete doc) when leave insert mode
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
@@ -108,10 +109,10 @@ inoremap <C-F> <C-X><C-F>
 inoremap <C-N> <C-X><C-N>
 
 " Use register 0 to store clipboard buffers
-noremap p "0p
-noremap P "0P
-noremap y "0y
-noremap x "0x
+" noremap p "0p
+" noremap P "0P
+" noremap y "0y
+" noremap x "0x
 " noremap d "0d
 
 "===============================================================================================
