@@ -39,6 +39,10 @@ In your home folder:
 	ctrl + \ + i: find files include this file
 	ctrl + \ + f: open the file
 
+	#gitgutter
+	gh: next hunk
+	gH: previoud hunk
+
 	#Python
 	:Pylint: python syntax check
 	:Pydoc function: find function definition in python document
