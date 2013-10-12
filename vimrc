@@ -116,6 +116,8 @@ inoremap <C-N> <C-X><C-N>
 " noremap x "0x
 " noremap d "0d
 
+map <F4> :sign unplace *<CR>
+
 "===============================================================================================
 "Plugin
 "===============================================================================================
@@ -153,7 +155,7 @@ let g:airline_enable_syntastic=1
 let g:airline_theme = 'powerlineish'
 
 "plygin nerdtree
-nnoremap <silent> <F5> :NERDTree<CR>
+nnoremap <silent> <F5> :NERDTreeTabsToggle<CR>
 
 "plugin nerdtreetab
 map <leader>n <plug>NERDTreeTabsToggle<CR>
@@ -192,6 +194,7 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 " vim-gitgutter
 nmap gh <Plug>GitGutterNextHunk
 nmap gH <Plug>GitGutterPrevHunk
+map <F6> :GitGutterToggle<CR>
 
 " Specific settings with each host
 silent! source ~/.myvimrc

@@ -29,7 +29,10 @@ In your home folder:
 	ds<tag>: delete tag
 	F1: show or hide line number
 	F2 or <leader>p: paste mode
-	F5 <leader>n: nerd_tree
+	F3: tag list
+	F4: Remove all signs
+	F5 or <leader>n: nerd_tree
+	F6: Disable gitgutter
 	
 	#cscope
 	ctrl + \ + g: find definition
