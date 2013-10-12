@@ -189,6 +189,10 @@ let g:jedi#popup_on_dot = 0
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
+" vim-gitgutter
+nmap gh <Plug>GitGutterNextHunk
+nmap gH <Plug>GitGutterPrevHunk
+
 " Specific settings with each host
 silent! source ~/.myvimrc
 
