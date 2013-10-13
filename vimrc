@@ -116,7 +116,7 @@ inoremap <C-N> <C-X><C-N>
 " noremap x "0x
 " noremap d "0d
 
-map <F4> :sign unplace *<CR>
+map <F5> :sign unplace *<CR>
 
 "===============================================================================================
 "Plugin
@@ -155,7 +155,7 @@ let g:airline_enable_syntastic=1
 let g:airline_theme = 'powerlineish'
 
 "plygin nerdtree
-nnoremap <silent> <F5> :NERDTreeTabsToggle<CR>
+nnoremap <silent> <F4> :NERDTreeTabsToggle<CR>
 
 "plugin nerdtreetab
 map <leader>n <plug>NERDTreeTabsToggle<CR>

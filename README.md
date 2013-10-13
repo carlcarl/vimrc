@@ -30,8 +30,8 @@ In your home folder:
 	F1: show or hide line number
 	F2 or <leader>p: paste mode
 	F3: tag list
-	F4: Remove all signs
-	F5 or <leader>n: nerd_tree
+	F4 or <leader>n: nerd_tree
+	F5: Remove all signs
 	F6: Disable gitgutter
 	
 	#cscope
