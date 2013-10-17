@@ -14,6 +14,9 @@ In your home folder:
 	tab: autocomplete
 	<C-\>: template
 
+	#snippet
+	ctrl + k: snippet complete or jump
+
 	T: tasklist
 	L & H: change tab(gt & gT)
 	gc(selection mode): comment selection
