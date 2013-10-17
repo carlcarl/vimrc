@@ -154,6 +154,13 @@ let g:airline_enable_branch = 1
 let g:airline_enable_syntastic=1
 let g:airline_theme = 'powerlineish'
 
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/snippets'
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+
 "plygin nerdtree
 nnoremap <silent> <F4> :NERDTreeTabsToggle<CR>
 
