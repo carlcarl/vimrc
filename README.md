@@ -61,6 +61,10 @@ In your home folder:
 	<leader>r run python
 	<leader>b set breakpoint
 
+	#Django
+	S + -: {{ content }}
+	S + =: {% content %}
+
 ## Normal Shortcuts ##
 
    	gg: Begin of file
