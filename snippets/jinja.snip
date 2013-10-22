@@ -1,6 +1,6 @@
 include html.snip
 
-snippet django_bootstrap_layout
+snippet django_bootstrap3_layout
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -43,3 +43,10 @@ snippet django_bootstrap_layout
         </body>
     </html>
 
+snippet django_bootstrap3_form
+	<form role="form" class="form-inline" method="post" action="${1}">
+		{% csrf_token %}
+		{% bootstrap_form form layout='inline' %}
+		{% buttons submit='OK' cancel='Cancel' layout='inline' %}
+		{% endbuttons %}
+	</form>
