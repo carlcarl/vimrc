@@ -272,7 +272,7 @@ snippet img
 snippet div
     <div ${1:id="${2:someid\}"}>${3}</div>${4}
 
-snippet navbar
+snippet bootstrap3_navbar
     <div class="navbar navbar-inverse navbar-fixed-top" role="banner">
         <div class="container">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
@@ -287,3 +287,11 @@ snippet navbar
         </div>
     </div>
 
+snippet bootstrap3_form
+    <form class="form-horizontal" role="form" method="post" action="${1}">
+        <div class="form-group">
+            <label class="sr-only" for="${2}">${3}</label>
+            <input type="text" class="form-control" id="${2}" placeholder="${4}">
+        </div>
+        <button type="submit" class="btn btn-default">${5}</button>
+    </form>
