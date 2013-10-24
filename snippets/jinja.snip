@@ -30,12 +30,10 @@ snippet django_bootstrap3_layout
                 </div>
             </header>
             {% block bootstra3_content %}
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-md-offset-4">
-                            <h1>{% block title %}(no title){% endblock %}</h1>
-                            {% block content %}(no content){% endblock %}
-                        </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <h1>{% block title %}(no title){% endblock %}</h1>
+                        {% block content %}(no content){% endblock %}
                     </div>
                 </div>
                 {% bootstrap_javascript jquery=True %}
