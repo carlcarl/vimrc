@@ -36,6 +36,8 @@ In your home folder:
 	F4 or <leader>n: nerd_tree
 	F5: Remove all signs
 	F6: Disable gitgutter
+	:Gdiff git diff with HEAD
+	:Gblame git blame
 	
 	#cscope
 	ctrl + \ + g: find definition
