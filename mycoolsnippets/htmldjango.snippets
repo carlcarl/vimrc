@@ -1,0 +1,79 @@
+priority -50
+
+snippet django_bs3
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- for Google -->
+		<meta name="description" content="" />
+		<meta name="keywords" content="key1,key2" />
+		<meta name="author" content="Chien-Wei Huang" />
+		<meta name="application-name" content="example" />
+
+
+		<!-- for Facebook -->          
+		<meta property="og:title" content="example" />
+		<meta property="og:site_name" content="example"/>
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="" />
+		<meta property="og:url" content="http://example.com" />
+		<meta property="og:description" content="" />
+
+		<!-- for Twitter -->          
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="example" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:domain" content="example.com" />
+		<meta name="twitter:site" content="@carl830" />
+		<meta name="twitter:creator" content="@carl830" />
+
+		<title>${1}</title>
+
+		{% load compress %}
+		{% compress css %}
+		<link rel="stylesheet" href="{% static "css/style.css" %}">
+		{% endcompress %}
+
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+		<style>
+			body {
+				padding-top: 60px;
+				padding-bottom: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">${2}</a>
+				<nav class="nav-collapse collapse" role="navigation">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/">Home</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		{% block bootstra3_content %}
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				{% block content %}(no content){% endblock %}
+			</div>
+		</div>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script srf="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		{% compress js %}
+		<script src="{% static "js/app.js" %}"></script>
+		{% endcompress %}
+		{% endblock %}
+	</body>
+</html>
+endsnippet
+
+# vim:ft=snippets:
