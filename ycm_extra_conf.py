@@ -71,6 +71,8 @@ flags = [
 '../llvm/include',
 '-isystem',
 '../llvm/tools/clang/include',
+'-isystem',
+'/usr/include/',
 '-I',
 '.',
 '-I',
