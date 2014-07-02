@@ -75,9 +75,10 @@ set hlsearch
 set noexpandtab
 autocmd FileType python setlocal expandtab
 autocmd FileType python setlocal foldmethod=indent
-autocmd FileType javascript setlocal expandtab
-autocmd FileType ls setlocal expandtab
-autocmd FileType css setlocal expandtab
+autocmd FileType javascript setlocal expandtab tabstop=4 shiftwidth=4
+autocmd FileType ls setlocal expandtab tabstop=2 shiftwidth=2
+autocmd FileType css setlocal expandtab tabstop=2 shiftwidth=2
+autocmd FileType html setlocal expandtab tabstop=2 shiftwidth=2
 
 " Auto close Scratch window(auto complete doc) when leave insert mode
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
