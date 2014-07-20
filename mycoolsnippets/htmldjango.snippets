@@ -14,7 +14,7 @@ snippet django_bs3
 		<meta name="application-name" content="example" />
 
 
-		<!-- for Facebook -->          
+		<!-- for Facebook -->
 		<meta property="og:title" content="example" />
 		<meta property="og:site_name" content="example"/>
 		<meta property="og:type" content="website" />
@@ -22,7 +22,7 @@ snippet django_bs3
 		<meta property="og:url" content="http://example.com" />
 		<meta property="og:description" content="" />
 
-		<!-- for Twitter -->          
+		<!-- for Twitter -->
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content="example" />
 		<meta name="twitter:description" content="" />
@@ -33,6 +33,12 @@ snippet django_bs3
 
 		<title>${1}</title>
 
+		{% load staticfiles %}
+		{% if debug %}
+		<link rel="stylesheet" href="{% static "vendor/bootstrap3/3.1.1/css/bootstrap.min.css" %}">
+		{% else %}
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+		{% endif %}
 		{% load compress %}
 		{% compress css %}
 		<link rel="stylesheet" href="{% static "css/style.css" %}">
@@ -47,13 +53,15 @@ snippet django_bs3
 		</style>
 	</head>
 	<body>
-		<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+		<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/">${2}</a>
-				<nav class="nav-collapse collapse" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">${2}</a>
+				</div>
+				<nav class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="/">Home</a></li>
 					</ul>
@@ -66,8 +74,17 @@ snippet django_bs3
 				{% block content %}(no content){% endblock %}
 			</div>
 		</div>
+		{% if debug %}
+		<script src="{% static "vendor/jquery/1.10.2/jquery.min.js" %}"></script>
+		<script src="{% static "vendor/bootstrap3/3.1.1/js/bootstrap.min.js" %}"></script>
+		<script src="{% static "vendor/underscore.js/1.6.0/underscore-min.js" %}"></script>
+		<script src="{% static "vendor/backbone.js/1.1.2/backbone-min.js" %}"></script>
+		{% else %}
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script srf="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+		{% endif %}
 		{% compress js %}
 		<script src="{% static "js/app.js" %}"></script>
 		{% endcompress %}
