@@ -213,5 +213,8 @@ nmap gh <Plug>GitGutterNextHunk
 nmap gH <Plug>GitGutterPrevHunk
 map <F6> :GitGutterToggle<CR>
 
+" tagbar
+nnoremap <silent> <F9> :TagbarToggle<CR>
+
 " Specific settings with each host
 silent! source ~/.myvimrc
