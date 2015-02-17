@@ -32,12 +32,14 @@ In your home folder:
 	ds<tag>: delete tag
 	F1: show or hide line number
 	F2 or <leader>p: paste mode
-	F3: tag list
 	F4 or <leader>n: nerd_tree
 	F5: Remove all signs
 	F6: Disable gitgutter
+	F9: Tagbar
 	:Gdiff git diff with HEAD
 	:Gblame git blame
+	ctrl + k: expand snippet
+	ctrl + b: move to next position of snippet
 	
 	#cscope
 	ctrl + \ + g: find definition
@@ -96,7 +98,6 @@ In your home folder:
 ## Package dependency ##
 
 	clang: c autocomplete
-	pysmell: python autocomplete
 	pylint: python syntax check
 	php: php syntax check 
 
