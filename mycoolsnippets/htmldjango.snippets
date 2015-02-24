@@ -91,4 +91,10 @@ snippet django_bs3
 </html>
 endsnippet
 
+snippet django_template_debug
+<pre>{% filter force_escape %}{% debug %}{% endfilter %}</pre>
+{#       //Move THIS open-comment line above the debug line to suppress.
+	//Below to activate.
+#}
+endsnippet
 # vim:ft=snippets:
