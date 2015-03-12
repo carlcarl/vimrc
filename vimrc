@@ -19,7 +19,7 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
 au BufNewFile,BufRead *.html set filetype=htmldjango
-au BufNewFile,BufRead *.asp set filetype=htmldjango
+au BufNewFile,BufRead *.asp set filetype=html
 
 "===============================================================================================
 "Color Setting
