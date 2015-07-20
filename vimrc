@@ -128,6 +128,10 @@ map <F5> :sign unplace *<CR>
 "===============================================================================================
 "Plugin
 "===============================================================================================
+"
+" python-mode
+
+
 let mapleader = ","
 
 "Add omni auto complete
@@ -197,10 +201,12 @@ let g:pymode_rope_goto_def_newwin = "vnew"
 let g:pymode_indent = 1
 let g:pymode_lint_ignore = "E501"
 let g:pymode_rope_completion = 0
+let g:pymode_lint_checkers = []
 
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
                      \ 'passive_filetypes': ['html'] }
+let g:syntastic_python_flake8_exe = 'python -m flake8 --ignore=E501'
 
 " Vim-jedi settings
 let g:jedi#popup_on_dot = 0
