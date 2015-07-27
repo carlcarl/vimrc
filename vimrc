@@ -206,7 +206,8 @@ let g:pymode_lint_checkers = []
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
                      \ 'passive_filetypes': ['html'] }
-let g:syntastic_python_flake8_exe = 'python -m flake8 --ignore=E501'
+let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_flake8_args='--ignore=E501,E225'
 
 " Vim-jedi settings
 let g:jedi#popup_on_dot = 0
