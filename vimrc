@@ -75,7 +75,6 @@ set hlsearch
 ""set smarttab
 set noexpandtab
 autocmd FileType python setlocal expandtab
-autocmd FileType python setlocal foldmethod=indent
 autocmd FileType javascript setlocal expandtab tabstop=4 shiftwidth=4
 autocmd FileType ls setlocal expandtab tabstop=2 shiftwidth=2
 autocmd FileType css setlocal expandtab tabstop=2 shiftwidth=2
@@ -130,6 +129,7 @@ map <F5> :sign unplace *<CR>
 "===============================================================================================
 "
 " python-mode
+let pymode_folding = 1
 
 
 let mapleader = ","
