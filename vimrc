@@ -202,6 +202,7 @@ let g:pymode_indent = 1
 let g:pymode_lint_ignore = "E501"
 let g:pymode_rope_completion = 0
 let g:pymode_lint_checkers = []
+let g:pymode_rope_autoimport = 0
 
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
