@@ -124,15 +124,29 @@ noremap x "0x
 
 map <F5> :sign unplace *<CR>
 
+let mapleader = ","
+
 "===============================================================================================
 "Plugin
 "===============================================================================================
 "
 " python-mode
 let pymode_folding = 1
+if has('python3')
+	let g:pymode_python = 'python3'
+endif
 
+let g:pymode_rope_goto_def_newwin = "vnew"
+" let g:pymode_lint_signs_always_visible = 1
+let g:pymode_indent = 1
+let g:pymode_lint_ignore = "E501"
+let g:pymode_rope_completion = 0
+let g:pymode_lint_checkers = []
+let g:pymode_rope_autoimport = 0
+let g:pymode_rope = 0
+let g:pymode_rope_lookup_project = 0
+let g:pymode_rope_complete_on_dot = 0
 
-let mapleader = ","
 
 "Add omni auto complete
 autocmd FileType c set ofu=ccomplete#Complete
@@ -195,15 +209,12 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
-
-let g:pymode_rope_goto_def_newwin = "vnew"
-" let g:pymode_lint_signs_always_visible = 1
-let g:pymode_indent = 1
-let g:pymode_lint_ignore = "E501"
-let g:pymode_rope_completion = 0
-let g:pymode_lint_checkers = []
-let g:pymode_rope_autoimport = 0
-
+" syntastic
+if has('python')
+	let g:syntastic_python_python_exec = 'python2'
+elseif has('python3')
+	let g:syntastic_python_python_exec = 'python3'
+endif
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
                      \ 'passive_filetypes': ['html'] }
@@ -211,7 +222,13 @@ let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args='--ignore=E501,E225'
 
 " Vim-jedi settings
-let g:jedi#popup_on_dot = 0
+"let g:jedi#popup_on_dot = 0
+"let g:jedi#autocompletion_command = "<tab>"
+if has('python')
+	let g:jedi#force_py_version = 2
+elseif has('python3')
+	let g:jedi#force_py_version = 3
+endif
 
 " Youcompleteme
 let g:ycm_confirm_extra_conf = 0
