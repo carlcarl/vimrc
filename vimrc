@@ -196,6 +196,8 @@ let g:surround_61 = "{% \r %}"
 
 "plygin nerdtree
 nnoremap <silent> <F4> :NERDTreeTabsToggle<CR>
+au VimEnter * NERDTree
+autocmd VimEnter * wincmd p
 
 "plugin nerdtreetab
 map <leader>n <plug>NERDTreeTabsToggle<CR>
