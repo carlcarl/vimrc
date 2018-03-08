@@ -47,7 +47,7 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'kien/ctrlp.vim'
 
-Plug 'Shougo/neosnippet'
+" Plug 'Shougo/neosnippet'
 
 Plug 'SirVer/ultisnips'
 
