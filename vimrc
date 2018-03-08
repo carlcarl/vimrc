@@ -29,7 +29,7 @@ Plug 'bling/vim-airline'
 
 Plug 'carlcarl/vim-airline-themes'
 
-Plug 'vim-scripts/TaskList.vim'
+Plug 'vim-scripts/TaskList.vim', { 'on': 'TaskList' }
 
 Plug 'vim-scripts/tComment'
 
@@ -49,9 +49,9 @@ Plug 'kien/ctrlp.vim'
 
 " Plug 'Shougo/neosnippet'
 
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 
-Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
 Plug 'othree/html5.vim'
 
