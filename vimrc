@@ -37,7 +37,9 @@ Plug 'vim-scripts/matchit.zip'
 
 Plug 'w0rp/ale'
 
-Plug 'roxma/nvim-completion-manager'
+if has('nvim')
+	Plug 'roxma/nvim-completion-manager'
+endif
 
 Plug 'airblade/vim-gitgutter'
 
