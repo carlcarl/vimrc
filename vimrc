@@ -12,7 +12,66 @@ runtime! debian.vim
 set fileencodings=utf-8,big5,gbk,latin1,euc-jp,iso-2022-jp
 
 "plugin pathogen(put all plugin in it)
-call pathogen#infect()
+" call pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree'
+
+Plug 'jistr/vim-nerdtree-tabs'
+
+Plug 'Lokaltog/vim-easymotion'
+
+Plug 'fatih/vim-go', { 'for': 'go' }
+
+Plug 'tpope/vim-surround'
+
+Plug 'bling/vim-airline'
+
+Plug 'carlcarl/vim-airline-themes'
+
+Plug 'vim-scripts/TaskList.vim'
+
+Plug 'vim-scripts/tComment'
+
+Plug 'vim-scripts/matchit.zip'
+
+Plug 'w0rp/ale'
+
+Plug 'roxma/nvim-completion-manager'
+
+Plug 'airblade/vim-gitgutter'
+
+Plug 'tpope/vim-fugitive'
+
+Plug 'kien/ctrlp.vim'
+
+Plug 'Shougo/neosnippet'
+
+Plug 'SirVer/ultisnips'
+
+Plug 'majutsushi/tagbar'
+
+Plug 'othree/html5.vim'
+
+Plug 'klen/python-mode', { 'for': 'python' }
+
+" Add check
+Plug 'davidhalter/jedi-vim'
+
+Plug 'vim-scripts/DirDiff.vim', { 'on': 'DirDiff' }
+
+Plug 'plasticboy/vim-markdown', { 'for': 'mkd' }
+
+Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
+
+Plug 'gkz/vim-ls', { 'for': 'ls' }
+
+Plug 'honza/vim-snippets', { 'for': 'vim' }
+
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+
+call plug#end()
+
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
