@@ -15,9 +15,9 @@ set fileencodings=utf-8,big5,gbk,latin1,euc-jp,iso-2022-jp
 " call pathogen#infect()
 call plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeTabsToggle' }
 
-Plug 'jistr/vim-nerdtree-tabs'
+Plug 'jistr/vim-nerdtree-tabs', { 'on':  'NERDTreeTabsToggle' }
 
 Plug 'Lokaltog/vim-easymotion'
 
@@ -260,8 +260,10 @@ let g:surround_61 = "{% \r %}"
 
 "plygin nerdtree
 nnoremap <silent> <F4> :NERDTreeTabsToggle<CR>
-au VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+
+" Disable because not need
+" au VimEnter * NERDTree
+" autocmd VimEnter * wincmd p
 
 "plugin nerdtreetab
 map <leader>n <plug>NERDTreeTabsToggle<CR>
