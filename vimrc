@@ -38,7 +38,22 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'w0rp/ale'
 
 if has('nvim')
-	Plug 'roxma/nvim-completion-manager'
+	" Plug 'roxma/nvim-completion-manager'
+	Plug 'ncm2/ncm2'
+	Plug 'roxma/nvim-yarp'
+
+	" enable ncm2 for all buffers
+	autocmd BufEnter * call ncm2#enable_for_buffer()
+
+	" IMPORTANT: :help Ncm2PopupOpen for more information
+	set completeopt=noinsert,menuone,noselect
+
+	Plug 'ncm2/ncm2-bufword'
+	Plug 'ncm2/ncm2-path'
+	Plug 'ncm2/ncm2-go'
+
+	inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+	inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 endif
 
 Plug 'airblade/vim-gitgutter'
