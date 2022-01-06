@@ -161,6 +161,8 @@ autocmd FileType css setlocal expandtab tabstop=2 shiftwidth=2
 autocmd FileType html setlocal expandtab tabstop=2 shiftwidth=2
 autocmd FileType htmldjango setlocal expandtab tabstop=2 shiftwidth=2
 autocmd FileType aspvbs setlocal expandtab tabstop=2 shiftwidth=2
+autocmd FileType typescript setlocal expandtab tabstop=2 shiftwidth=2
+autocmd FileType typescriptreact setlocal expandtab tabstop=2 shiftwidth=2
 
 " Auto close Scratch window(auto complete doc) when leave insert mode
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
@@ -346,6 +348,9 @@ let g:go_highlight_build_constraints = 1
 
 let g:go_highlight_extra_types = 1
 let g:go_highlight_generate_tags = 1
+
+" ale
+let g:ale_python_flake8_options = '--ignore=E501'
 
 " Specific settings with each host
 silent! source ~/.myvimrc
