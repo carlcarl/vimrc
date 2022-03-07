@@ -6,8 +6,9 @@ In your home folder:
 	git clone git://github.com/carlcarl/vimrc.git
 	ln -s ~/.vim/vimrc ~/.vimrc
 	ln -s ~/.vim/gvimrc ~/.gvimrc
-	cd ~/.vim
-	git submodule update --init --recursive
+	vim // or nvim
+	:PluginInstall
+
 
 ## Addictional Shortcuts ##
 
