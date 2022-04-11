@@ -21,7 +21,8 @@ Plug 'jistr/vim-nerdtree-tabs', { 'on':  'NERDTreeTabsToggle' }
 
 Plug 'Lokaltog/vim-easymotion'
 
-Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'fatih/vim-go', { 'for': 'go' }
 
 Plug 'tpope/vim-surround'
 
@@ -295,18 +296,6 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
-" syntastic
-if has('python')
-	let g:syntastic_python_python_exec = 'python2'
-elseif has('python3')
-	let g:syntastic_python_python_exec = 'python3'
-endif
-let g:syntastic_mode_map={ 'mode': 'active',
-                     \ 'active_filetypes': [],
-                     \ 'passive_filetypes': ['html'] }
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_args='--ignore=E501,E225'
-
 " Vim-jedi settings
 "let g:jedi#popup_on_dot = 0
 "let g:jedi#autocompletion_command = "<tab>"
@@ -343,7 +332,7 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
-let g:go_highlight_operators = 1
+" let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 let g:go_highlight_extra_types = 1
@@ -351,6 +340,11 @@ let g:go_highlight_generate_tags = 1
 
 " ale
 let g:ale_python_flake8_options = '--ignore=E501'
+
+" vim-go
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+let g:go_fmt_command = "gofmt"
 
 " Specific settings with each host
 silent! source ~/.myvimrc
