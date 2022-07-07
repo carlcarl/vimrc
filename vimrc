@@ -51,7 +51,6 @@ if has('nvim')
 
 	Plug 'ncm2/ncm2-bufword'
 	Plug 'ncm2/ncm2-path'
-	Plug 'ncm2/ncm2-go'
 
 	inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 	inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
