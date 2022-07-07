@@ -44,7 +44,14 @@ if has('nvim')
 	Plug 'roxma/nvim-yarp'
 
 	" enable ncm2 for all buffers
-	autocmd BufEnter * call ncm2#enable_for_buffer()
+	fun! SupportBuffer()
+		" Don't strip on these filetypes
+		if &ft =~ 'go'
+			return
+		endif
+		call ncm2#enable_for_buffer()
+	endfun
+	autocmd BufEnter * call SupportBuffer()
 
 	" IMPORTANT: :help Ncm2PopupOpen for more information
 	set completeopt=noinsert,menuone,noselect
@@ -339,6 +346,7 @@ let g:go_highlight_generate_tags = 1
 
 " ale
 let g:ale_python_flake8_options = '--ignore=E501'
+let g:ale_completion_enabled = 1
 
 " vim-go
 let g:go_def_mode='gopls'
