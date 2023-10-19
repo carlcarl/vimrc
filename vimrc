@@ -151,7 +151,7 @@ set wildmenu            " wild char completion menu
 set incsearch		" Incremental search
 set autowrite		" Automatically save before commands like :next and :make
 "set hidden             " Hide buffers when they are abandoned
-"set mouse=a		" Enable mouse usage (all modes)
+set mouse=		" Enable mouse usage (all modes)
 set nu
 set tabstop=4
 set shiftwidth=4
@@ -170,6 +170,7 @@ autocmd FileType htmldjango setlocal expandtab tabstop=2 shiftwidth=2
 autocmd FileType aspvbs setlocal expandtab tabstop=2 shiftwidth=2
 autocmd FileType typescript setlocal expandtab tabstop=2 shiftwidth=2
 autocmd FileType typescriptreact setlocal expandtab tabstop=2 shiftwidth=2
+autocmd FileType json setlocal expandtab tabstop=2 shiftwidth=2
 
 " Auto close Scratch window(auto complete doc) when leave insert mode
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
